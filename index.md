@@ -15,19 +15,12 @@ layout: default
   </h1>
   {{post.description}}
   <div class="post-date"><strong>Date: </strong>{{ post.date | date: "%b %-d, %Y" }} | <strong>Tags: </strong>{%for tag in post.tags%}<a href="{{ tag | slugify | prepend: 'tag/' | relative_url }}">{{tag}}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %} 
-  {%endfor%} |<strong>Read time: </strong> {{post.content.size | divided_by: 300}} minutes
+  {%endfor%} |<strong>Read time: </strong> {{post.content.size | divided_by: 600}} minutes
   </div> 
-  <!-- <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div> -->
   
-
-<!--   {{ post.content }} -->
-{{post.content.size | divided_by: 300}}
-words: {{post.words}}
 </article>
 
 {% endfor %}
 
-
-<!-- ## end of index file -->
 
 

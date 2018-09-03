@@ -2,11 +2,14 @@
 layout: default
 ---
 
-<small>{{ page.date | date: "%-d %B %Y" }}</small>
 <h1>{{ page.title }}</h1>
-
-<p class="view">by {{ page.author | default: site.author }}</p>
-
+<span class="post-date"><strong>Date: </strong>{{ page.date | date: "%b %-d, %Y" }} | <strong>Tags: </strong>{%for tag in page.tags%}<a href="{{ tag | slugify | prepend: 'tag/' | relative_url }}">{{tag}}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %} 
+  {%endfor%} |<strong>Read time: </strong> {{page.content.size | divided_by: 600}} minutes
+  <br>
+  <strong>Description: </strong>{{page.description}}
+</span>
+<br>
+<br>
 {{content}}
 
 {% include disqus.html %}
