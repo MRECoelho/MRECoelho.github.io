@@ -13,20 +13,21 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <a href="{{ site.url }}"> Home</a><a href="https://github.com/henrythemes/jekyll-minimal-theme">About</a>
+      <header><h3>
+        <a href="{{ site.url }}" class="left"> Home</a><a href="https://github.com/henrythemes/jekyll-minimal-theme" class="right">About</a>
+        </h3>
       </header>
       <section>
 
       {{ content }}
 
       </section>
-      <footer>
+      <!-- <footer>
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+      </footer> -->
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}
