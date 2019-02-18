@@ -1,5 +1,6 @@
 ---
 layout: tagpage
-title: "Design"
+title: "Tag: design"
 tag: design
+robots: noindex
 ---

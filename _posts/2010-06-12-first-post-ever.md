@@ -1,7 +1,8 @@
 ---
+layout: post
 title: "How The Ruby Tap Method Works"
 description: "Have a look at all the predesigned elements you can use in Chalk."
-tags: [design, jekyll]
+tags: design jekyll
 ---
 
 First, let's define a couple of terms:  *caller* and *mutated*.

@@ -2,7 +2,7 @@
 layout: post
 title: "second post"
 description: "Have a look at all the predesigned elements you can use in Chalk."
-tags: [design, jekyll]
+tags: design rust
 ---
 
 Hi

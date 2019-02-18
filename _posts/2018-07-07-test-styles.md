@@ -2,10 +2,9 @@
 layout: post
 title: "Test Theme Styles"
 description: "This is he description of some post. Here all markdown stuff is tested in one single post. Enjoy! This is he description of some post. Here all markdown stuff is tested in one single post. Enjoy! This is he description of some post. Here all markdown stuff is tested in one single post. Enjoy! This is he description of some post. Here all markdown stuff is tested in one single post. Enjoy!"
+tags: test
 ---
-
-
-
+## Semi title
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
