@@ -1,6 +1,8 @@
 @import "fonts";
 @import "rouge-github";
 
+
+
 body {
   background-color:#20191E; // #fff; //232d2e
   padding:50px;
@@ -83,6 +85,7 @@ blockquote {
 
 code, pre {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+  // background: rgb(15, 12, 14);
   // color:#333;
 }
 
@@ -114,8 +117,14 @@ th {
   color:#26937F;
 }
 
-img {
+img{
   max-width:100%;
+}
+
+img[src$="ing.png"]{
+
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
 
 header {
