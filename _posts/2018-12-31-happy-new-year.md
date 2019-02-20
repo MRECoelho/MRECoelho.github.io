@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "This is a superrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr long titleeeeeeeeeeeeeeeeeee yeeeeeep suuupppeeer looooonnggg"
+title: "This is a superrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr long titleeeeeeeeeeeeeeeeeee yeeeeeep suuupppeeer looooonnggg"
 description: "Hey there, happy new year!"
 tags: design jekyll
 ---
