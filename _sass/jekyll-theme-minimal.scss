@@ -279,10 +279,25 @@ strong {
 // }
 
 section {
+
   // width:600px;
   // float:right;
   padding-bottom:50px;
+  // transition-delay: 20ms;
+  // transition: opacity ease-in-out 200ms;
+  // opacity: 1;
+animation: fadeIn 300ms ease-in-out; //timing-function delay iteration-count direction fill-mode
 }
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
 
 small {
   font-size:11px;
