@@ -5,7 +5,7 @@
 
 body {
   background-color:#20191E; // #fff; //232d2e
-  padding:50px;
+  padding: 0 50px;
   font: 1em "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ebebeb; // #727272;
   font-weight:400;
@@ -22,7 +22,36 @@ body {
   strong{
     color:#26937F;
   }
+
+  a{
+    text-decoration: underline solid #26937F;
+  }
 }
+
+.post-title{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.post-title>a::after{
+
+ content: '';
+ 
+
+ display: block;
+ position: absolute;
+ left: 0;
+ width: 0%;
+ height: 5px;
+ background-color: #26937F;
+ transition: all ease-in-out 300ms;
+}
+
+.post-title>a:hover::after{
+  width: 100%;
+  // background-color: #9CD5BE;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
   color:#fff; //597283  headers in post
@@ -46,11 +75,29 @@ h1 {
   font-size:28px;
 }
 
+h1 > a:hover {
+  color: #26937F;
+}
+
 a {
-  transition: 300ms;
+  transition: all ease-in-ease-out 300ms;
   color:#26937F; //#267CB9; //  597283 // header in index.html, tags in desc and links
   text-decoration:none;
+
+
+// text-decoration-color: rgba($color: #26937F, $alpha: 0.4); 
 }
+
+p > a{
+  text-decoration: underline solid #26937F;
+
+}
+
+ul > a{
+  text-decoration: underline solid #26937F;
+
+}
+
 
 a:hover, a:focus {
   color:#9CD5BE;
@@ -137,7 +184,8 @@ header {
   font-size: 1em;
   font-weight: bold;
   >a{
-    padding: 0.4125em;
+    
+    padding: 0.4125em 1em;
     
     // height: 2em;
   text-decoration: none;
@@ -246,6 +294,10 @@ hr {
   margin:0 0 20px;
 }
 
+hr.fat{
+  height: 5px;
+}
+
 footer {
   width:270px;
   float:left;
@@ -309,7 +361,7 @@ footer {
 
 @media print, screen and (max-width: 480px) {
   body {
-    padding:15px;
+    padding: 0 15px;
   }
 
   .downloads {

@@ -4,19 +4,24 @@ layout: default
 <div class="tags">
   <!-- <section> -->
 
-    <h1>Tag: {{ page.tag }}</h1>
-    <hr>
+    <h1>{{ page.tag }}</h1>
+    <hr class="fat">
     <ul>
       {% for post in site.tags[page.tag] %}
       
       
       
       
-      <p>
-        <strong><a href="{{ post.url }}">{{ post.title }}</a></strong> <span class="post-date">({{ post.date | date_to_string }})</span><br>
-        {{ post.description }}
-        <br>
-      </p>
+
+
+
+<h2><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h2>
+        {{ post.description }}<br>
+        <span class="post-date"><strong>Date: </strong>{{ post.date | date: "%b %-d, %Y" }} | <strong>All tags: </strong>{%for ptag in post.tags%}<a href="{{ ptag | slugify | prepend: 'tag/' | relative_url }}">{{ptag}}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}{%endfor%} 
+        | <strong>Read time: </strong> {{post.content.size | divided_by: 600}} minutes</span>
+
+
+
       
       {% endfor %}
     </ul>
