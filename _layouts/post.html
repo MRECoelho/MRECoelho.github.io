@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <h1 class="post_title">{{ page.title }}</h1>
 <span class="post-date"><strong>Date: </strong>{{ page.date | date: "%b %-d, %Y" }} <br> <strong>Tags: </strong>{%for tag in page.tags%}<a href="{{ tag | slugify | prepend: 'tag/' | relative_url }}">{{tag}}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %} 
   {%endfor%} <br><strong>Read time: </strong> {{page.content.size | divided_by: 600}} minutes
