@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 {% seo %}
+
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
@@ -17,17 +18,21 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
         onload="renderMathInElement(document.body);"></script>
 
-
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
   </head>
   <body>
-    <div class="wrapper">
       <header>
-        <a href="{{ site.url }}">Home</a><a href="{{site.url}}/categories.html">Tags</a><a href="{{site.url}}/about.html">About</a>
-        
+      <ul class="menu">
+
+
+        <li><a href="{{ site.url }}">Home</a></li>
+        <li><a href="{{site.url}}/categories.html">Tags</a></li>
+        <li><a href="{{site.url}}/about.html">About</a></li>
+        </ul>  
       </header>
+    <div class="wrapper">
       <section>
 
       {{ content }}
@@ -45,5 +50,8 @@
       ga('send', 'pageview');
     </script>
     {% endif %}
+
+
+
   </body>
 </html>
