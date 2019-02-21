@@ -3,6 +3,7 @@
 
 a{outline:none;}
 
+
 body {
   background-color:#20191E; // #fff; //232d2e
 
@@ -27,6 +28,7 @@ body {
   }
 
   a{
+    // transition: color ease-in-ease-out 300ms;
     text-decoration: underline solid #2BAC99;
   }
 }
@@ -135,29 +137,32 @@ h1 > a:hover {
   color: #2BAC99;
 }
 
+
 a {
-  transition: all ease-in-ease-out 300ms;
-  color:#2BAC99; //#267CB9; //  597283 // header in index.html, tags in desc and links
   text-decoration:none;
 
+  color:#2BAC99; //#267CB9; //  597283 // header in index.html, tags in desc and links
+  transition: color ease-in-out 300ms;
 
 // text-decoration-color: rgba($color: #2BAC99, $alpha: 0.4); 
 }
 
 p > a{
   text-decoration: underline solid #2BAC99;
-
+  // transition: color ease-in-ease-out 300ms;
+  transition: all ease-in-ease-out 3000ms;
 }
 
 ul > a{
   text-decoration: underline solid #2BAC99;
+  transition: all ease-in-ease-out 3000ms;
 
 }
 
-
 a:hover, a:focus {
-  color:#9CD5BE;
-  // font-weight: bold;
+  color:rgb(181, 223, 210);
+  transition: color ease-in-out 300ms;
+  
 }
 
 // a small {
