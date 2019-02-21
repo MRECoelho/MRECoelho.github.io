@@ -1,7 +1,7 @@
 @import "fonts";
 @import "rouge-github";
 
-
+a{outline:none;}
 
 body {
   background-color:#20191E; // #fff; //232d2e
@@ -50,7 +50,7 @@ body {
 
 
 
-  outline:none;
+  
 
 
 
@@ -74,6 +74,17 @@ color: #20191E;
   height: 100%;
   width: 100%;
 }
+
+.post-title > a{
+  // color: #fff;
+  transition: all ease-in-out 500ms;
+}
+
+.post-title > a:hover{
+  // color: linear-gradient(#20191E, #444);
+  color: rgb(81, 196, 180);
+  transition: all ease-in-out 500ms;
+}
 .post-title>a::after{
 
  content: '';
@@ -85,12 +96,15 @@ color: #20191E;
  left: 0;
  width: 0%;
  height: 5px;
- background-color: #2BAC99;
+//  background-color: #2BAC99;
+background-image: linear-gradient(30deg, #2BAC99 50%,  rgb(21, 189, 195));
  transition: all ease-in-out 300ms;
+ opacity: .5;
 }
 
 .post-title>a:hover::after{
   width: 100%;
+  opacity: 1;
   // background-color: #9CD5BE;
 }
 
